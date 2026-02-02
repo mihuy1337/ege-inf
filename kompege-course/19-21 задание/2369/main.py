@@ -1,3 +1,6 @@
+from functools import lru_cache
+
+
 def game(s1, s2, s3, m):
     if s1 + s2 + s3 >= 73: return m % 2 == 0
     if m == 0: return 0
